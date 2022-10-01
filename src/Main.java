@@ -16,8 +16,8 @@ public class Main {
         int numOfPeople = scan.nextInt();
 
  // Calculations
-        double totalBillAndTip = (1 + tipPercent/100) * totalBill;
-        double totalTip = totalBill * (tipPercent * 1 / 100);
+        double totalBillAndTip = (1 + tipPercent/100.0) * totalBill;
+        double totalTip = totalBill * (tipPercent * 1 / 100.0);
         double tipPerPerson = totalTip / numOfPeople;
         double totalPerPerson = (totalBill / numOfPeople) + tipPerPerson;
 
@@ -25,9 +25,6 @@ public class Main {
         System.out.println("The total bill and tip amount is " + totalBillAndTip);
         System.out.println("Each person has to tip " + tipPerPerson);
         System.out.println("Each person has to pay " + totalPerPerson + " in total");
-
-
-
 
     }
 }
